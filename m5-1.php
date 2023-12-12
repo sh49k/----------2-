@@ -98,6 +98,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
             if ($stmt->execute()) {
                 echo "";
+        } 
         } else {
             echo "パスワードが一致しません！<br>削除したい番号とパスワードを入力してください<br>";
         }
