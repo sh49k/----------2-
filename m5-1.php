@@ -97,10 +97,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $stmt->bindParam(':password', $deletePassword, PDO::PARAM_STR);
 
             if ($stmt->execute()) {
-                echo "削除しました！<br>";
-            } else {
-                echo "削除できませんでした。<br>";
-            }
+                echo "";
         } else {
             echo "パスワードが一致しません！<br>削除したい番号とパスワードを入力してください<br>";
         }
